@@ -1,0 +1,397 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 2px 8px;
+    position: fixed;
+    background-color: white;
+    width: 99vw;
+    font-size: 0.9rem;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 1rem;
+    color: rgb(78, 8, 99);
+    font-weight: 600;
+}
+
+.candidate {
+    height: 1.5rem;
+    width: auto;
+    color: white;
+    background-color: rgb(78, 8, 99);
+    border-radius: 0.2rem;
+}
+
+.span::after {
+    position: absolute;
+    top: 2.28rem;
+    content: "";
+    height: 3px;
+    width: 4.9rem;
+    background-color: rgb(37, 115, 232);
+}
+
+nav ul li {
+    padding: 0.2rem;
+    cursor: pointer;
+}
+
+nav ul li:hover {
+    background-color: rgb(238, 237, 237);
+    border-radius: 0.2rem;
+}
+
+.logo img {
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.login {
+    color: orangered;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0.2rem;
+    font-weight: 700;
+}
+
+.login:hover {
+    background-color: rgb(238, 237, 237);
+    border-radius: 0.2rem;
+}
+
+.content_1 {
+    margin-top: 8rem;
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: 1px solid rgb(231, 230, 230);
+}
+
+.sign_up {
+    align-items: center;
+    display: flex;
+    gap: 1rem;
+    font-size: 1.1rem;
+    border-radius: 2rem;
+    border: 2px solid rgb(78, 8, 99);
+    padding: 0.7rem 2.5rem;
+    background-color: transparent;
+    color: rgb(78, 8, 99);
+    cursor: pointer;
+}
+
+.img1 img {
+    height: 30rem;
+    width: 30rem;
+}
+
+.text {
+    max-width: 33rem;
+    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.text h1 {
+    font-size: 2.4rem;
+    line-height: 3rem;
+    color: #440055;
+}
+
+.text p {
+    color: rgb(173, 171, 171);
+    font-size: 0.98rem;
+}
+
+.features p {
+    color: rgb(13, 13, 116);
+    padding: 0.2rem;
+    font-size: 0.9rem;
+}
+
+.content_2 {
+    margin-top: 2rem;
+    border-bottom: 1px solid rgb(231, 230, 230);
+}
+
+.main_content {
+    margin-top: 3rem;
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 2rem;
+}
+
+.heading {
+    font-size: 0.85rem;
+    line-height: 2rem;
+    text-align: center;
+    color: #440055;
+}
+
+.heading p {
+    font-size: 1.1rem;
+}
+
+.text1 {
+    max-width: 30rem;
+    display: flex;
+    flex-direction: column;
+    color: rgb(13, 13, 101);
+    gap: 2.5rem;
+    font-size: 0.9rem;
+}
+
+.features1 p {
+    color: rgb(13, 13, 116);
+    padding: 0.2rem;
+}
+
+.get_started {
+    background-color: tomato;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #440055;
+    color: white;
+    display: flex;
+    border-bottom: 1px solid rgb(51, 51, 85);
+    justify-content: space-between;
+    padding: 3rem;
+    height: 30rem;
+}
+
+footer div {
+    padding-top: 4rem;
+    max-width: 20rem;
+}
+
+footer div ul {
+    margin-top: 1.8rem;
+}
+
+footer div ul li {
+    margin-top: 1.2rem;
+    cursor: pointer;
+}
+
+.footer {
+    background-color: #440055;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.4rem;
+}
+
+.icon {
+    color: gray;
+    font-size: 1.2rem;
+    display: flex;
+    gap: 1.5rem;
+    align-items: start;
+}
+
+.icon i {
+    cursor: pointer;
+}
+
+.para {
+    margin-top: 2rem;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 0.3rem;
+}
+
+.hamburger div {
+    width: 1.5rem;
+    height: 0.2rem;
+    background-color: rgb(78, 8, 99);
+    border-radius: 0.1rem;
+}
+
+@media (max-width: 1024px) {
+
+    .content_1,
+    .content_2 {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        gap: 1.5rem;
+    }
+
+    .text,
+    .text1 {
+        flex: 1 1 90%;
+        text-align: center;
+    }
+
+    .img1 img {
+        max-width: 80%;
+        height: auto;
+    }
+
+    .sign_up {
+        margin: auto;
+    }
+
+    .features p,
+    .features1 p {
+        text-align: center;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        height: auto;
+        padding: 2rem 1rem;
+    }
+
+    footer div {
+        max-width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .icon {
+        justify-content: center;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 1rem;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    nav ul {
+        transition: 0.3s ease-in-out;
+    }
+
+    .navbar-collapse {
+        display: flex;
+        flex-direction: column;
+        gap: 0.8rem;
+        background-color: white;
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+    }
+
+    .navbar-collapse.open {
+        max-height: 20rem;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 0.8rem;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        padding: 0.5rem;
+    }
+
+    .login {
+        width: 100%;
+        text-align: center;
+    }
+
+    .content_1,
+    .content_2,
+    .main_content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .content_1 .text,
+    .content_2 .text1,
+    .content_1 .img1 img,
+    .content_2 .img1 img {
+        flex: 1 1 100%;
+    }
+
+    nav .login {
+        margin-top: 1rem;
+    }
+
+    .span::after {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+
+    .login {
+        width: 100%;
+        text-align: center;
+        margin-top: 0.5rem;
+    }
+
+    .sign_up {
+        font-size: 0.9rem;
+        padding: 0.5rem 1.5rem;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+        line-height: 2.4rem;
+    }
+
+    p {
+        font-size: 0.85rem;
+    }
+
+    .get_started {
+        padding: 0.4rem 0.8rem;
+    }
+
+    .icon i {
+        font-size: 1rem;
+    }
+}

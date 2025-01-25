@@ -5,5 +5,5 @@ A responsive and user-friendly webpage to showcase candidate details, built with
 
 Features
 
-Clean and intuitive design
-Mobile-friendly responsive layout
+Clean and intuitive design.
+Mobile-friendly responsive layout.
